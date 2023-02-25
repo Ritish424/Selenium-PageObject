@@ -95,7 +95,7 @@ public class ReportLog extends BasePage implements ITestListener {
         System.out.println((result.getMethod().getMethodName() + " failed!"));
         String exceptionMessage = Arrays.toString(result.getThrowable().getStackTrace());
 
-        test.get().fail("<details><summary><b><font color=red>" + "Error occured, click to see details" + "</font></b></summary>"
+        test.get().fail("<details><summary><b><font color=red>" + "Error occurred, click to see details" + "</font></b></summary>"
                 + exceptionMessage.replaceAll(",", "<br>") + "</details> \n");
         test.get().fail("<b><font color=red>" + "Screenshot of Failure" + "</font></b>",
                 MediaEntityBuilder.createScreenCaptureFromPath(getScreenshot()).build());
