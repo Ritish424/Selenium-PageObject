@@ -41,7 +41,7 @@ public class ReportLog extends BasePage implements ITestListener {
             }
         }
         ExtentSparkReporter spark = new ExtentSparkReporter(OUTPUT_FOLDER + FILE_NAME);
-        spark.config().setDocumentTitle("Automation Test Results");
+        spark.config().setDocumentTitle("Automation Test Report");
         spark.config().setReportName("Automation Test Results");
         spark.config().setTheme(Theme.DARK);
 
